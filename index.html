@@ -1,192 +1,60 @@
-<!DOCTYPE html>
-<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<!doctype html>
+<html lang="en">
 <head>
-<title>YouTube Downloader - Download Youtube videos for free!</title>
-<meta content='We offer the fastest way to save YouTube videos in mp3, mp4, or in other range of formats. ✅ It’s the most convenient YouTube video downloader you’ve ever tried!' name='Description'/>
-<meta content='index, follow' name='robots'/>
-<meta content='2 days' name='revisit-after'/>
-<meta content='English' name='language'/>
-<meta content='INDIA' name='geo.country'/>
-<meta content='BIHAR' name='geo.placename'/>
-<meta content='global' name='distribution'/>
-<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-<meta content='true' name='MSSmartTagsPreventParsing'/>
-<meta content='general' name='rating'/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<style id='page-skin-1' type='text/css'><!--
-/*    
-  -----------------------------------------------------------------------------------    
-  This blog was Created & Modify by Techly360    
-  ----------------------------------------------------------------------------------- */
-#navbar-iframe {
-height:0px;
-visibility:hidden;
-display: none !important;
-}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-margin: 0;
-padding: 0;
-border: 0;
-font-size: 100%;
-font: inherit;
-vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-display: block;
-}
-html {
-background:#eeeeee;
-text-align:center;
-line-height: 1;
-font-family: Georgia;
-}
-ol, ul {
-list-style: none;
-}
-blockquote, q {
-quotes: none;
-}
-blockquote:before, blockquote:after, q:before, q:after {
-content: '';
-content: none;
-}
-table {
-border-collapse: collapse;
-border-spacing: 0;
-}
-*:focus {
-outline: 0;
-}
-#hd {
-width:100%;
-height:390px;
-background-image: linear-gradient(to right, #0970eb, #008fef, #00a4d8, #00b3b6, #52be9a);
-margin:0 0 50px 0;
--moz-box-shadow: inset 0 -4px 10px -5px #000;
--webkit-box-shadow: inset 0 -4px 10px -5px #000;
-box-shadow: inset 0 -4px 10px -5px #000;
-}
-h1 {
-font-size:24px;
-font-weight:bold;
-color:#fff;
-text-shadow: 1px 1px 1px #666666;
-}
-#hd p{
-max-width:70%;
-margin:20px auto;
-padding:10px;
-background:#2A78C3;
-border: dashed #00C0C7 2px;
-font-family:arial;
-font-size:17px;
-font-weight:bold;
-line-height: 1.4;
-color:#FFFFFF;
-}
-#hd p span{
-color:#FFFF00;
-}
-input[type="text"]{
-width:400px;
-height:70px;
-padding:0 0 0 10px;
-border: dashed #1a1a1a 2px;
-font-family: Georgia;
-}
-input[type="submit"]{
-height:72px;
-background: #66bdff;
-background-image: -webkit-linear-gradient(top, #66bdff, #0d9eff);
-background-image: -moz-linear-gradient(top, #66bdff, #0d9eff);
-background-image: -ms-linear-gradient(top, #66bdff, #0d9eff);
-background-image: -o-linear-gradient(top, #66bdff, #0d9eff);
-background-image: linear-gradient(to bottom, #66bdff, #0d9eff);
-border: dashed #1a1a1a 1px;
--webkit-border-radius: 0;
--moz-border-radius: 0;
-border-radius: 0px;
-margin:0 0 0 -2px;
-cursor: pointer;
-font-family: Georgia;
-text-decoration: none;
-color: #fff;
-}
-input[type="submit"]:hover {
-background: #f72525;
-background-image: -webkit-linear-gradient(top, #f72525, #b52222);
-background-image: -moz-linear-gradient(top, #f72525, #b52222);
-background-image: -ms-linear-gradient(top, #f72525, #b52222);
-background-image: -o-linear-gradient(top, #f72525, #b52222);
-background-image: linear-gradient(to bottom, #f72525, #b52222);
-}
-h2{
-margin:20px;
-font-size:14px;
-}
-h3{
-color:#A9A6A6;
-margin:10px auto;
-}
-#hidden_div img{
-margin:5px;
-border: solid #C8312B 3px;
-}
-#sorry{
-width:200px;
-height:3opx;
-margin:10px auto;
-padding:10px;
-background:#BA2020;
-border: dashed #7E1313 2px;
-color:#fff;
-}
-#iam{
-margin:50px auto;
-color:#1a1a1a;
-}
-.footer-copy {
-margin: 50px auto;
-color: #c2c2c2;
-}
- ��-->
-.adsbox{padding:2em;box-shadow:0 5px 15px rgba(0,0,0,.16);border-radius:5px;margin-top:1em;background:#fff;text-align:left}
-</style>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+<link defer rel="stylesheet" href="script.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Youtube Downloader</title>
 </head>
-<body class=" text-center">
-<div id='hd'>
-<img alt='youtube thumbnail generator' src='https://1.bp.blogspot.com/-6iQK-ugxaMA/XzlEKT2IKCI/AAAAAAAAB8w/ch-bNMemZroo07x-raUTXatJH2jQZh1hACLcBGAsYHQ/s1600/aaaaaaa.png' title='High Quality YouTube Video Downloader'/>
-<h1>High Quality YouTube Video Downloader</h1>
-<p>YouTube Video Downloader automatically take "High Quality" Video File from YouTube URL. Paste Your YouTube Video URL (<span>https://www.youtube.com/watch?v=zru82DBCIEw&t=237s</span>) in the below box and Click on "Download" button. Within Second it will generate your YouTube Video Download Button.</p>
-</div>
-<div class="addthis_inline_share_toolbox centersocials"></div>
-<div class="adsbox container">
-Place Ad Code 1
-</div>
-</br>
-<iframe src="https://mp3downy.com/mp3-converter?apikey=89eb7d92-3622-45d7-86a0-15adb53d61f1&color=17a2b8&bg=ffffff" style="width:100%;min-height:250px;height:auto;" ></iframe>
-<div class="adsbox container">
-Place Ad Code 2
-</div>
-<div id='hidden_div' style='display:none'>
-<div id='thumbnails'>
-</div>
-</div>
-<!-- Add this Sticky Sidebar and Inline Share - By Technical Arp Login to Addthis and Change as per your Requirement-->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c98f50a092025d4"></script>
-<footer style="margin-top:30px; margin-bottom:20px;">
-<div class='container text-center'>
-<div class='footer-copy'>
-<p>© Design by Techly360.com <script>document.write(new Date().getFullYear())</script>
-<span>• </span>
-</br>
-</br>
-</div>
-</div>
-</div>
-</footer>
+<body>
+
+<header>
+    <h1 class="title">
+        DP Downloader
+    </h1>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+    </ul>
+</header>
+
+
+<section>
+    <h1>Youtube Downloader</h1>
+    <div class="link-container">
+        <label for="">Video Link</label>
+        <input type="text" class="link" name="link" placeholder="Enter Video Link" required>
+    </div>
+    <div class="format-container">
+        <label for="">Format</label>
+        <select class="format" required>
+            <option selected disabled> Select Video Format</option>
+            <option value="mp3">Mp3</option>
+            <option value="mp4a">144</option>
+            <option value="360">360</option>
+            <option value="480">480</option>
+            <option value="720">720</option>
+            <option value="1080">1080</option>
+            <option value="4k">4k</option>
+            <option value="8k">8k</option>
+
+
+        </select>
+    </div>
+    <div class="button-container">
+        <button class="btn" type="submit">
+            Start
+        </button>
+    </div>
+</section>
+
+
+
 </body>
 </html>
